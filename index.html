@@ -1,0 +1,214 @@
+<!DOCTYPE HTML>
+<!--
+	Road Trip by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>建築物導覽</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<style type="text/css">
+.div_right_bottom {
+width:200px;
+float:right;
+position:fixed;
+right:0px;
+bottom:0px;
+z-index:20;
+border:0px solid #69c;
+background-color: white ;
+color: black;
+;
+_position:absolute; /* position fixed for IE6 */
+}
+</style>
+	</head>
+	<body>
+
+		<!--     Header   -->
+
+		<!-- Header -->
+			<header id="header">
+				<div class="logo"><a href="index.html">Re:<span>重新開始</span></a></div>
+				<a href="#menu"><span>Menu</span></a>
+			</header>
+
+		<!-- Nav --> 
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="index.html">主頁</a></li>
+					<li><a href="local/local.html">其他地方</a></li>
+					<li><a href="professor.html">我們的教授</a></li>
+				</ul>
+			</nav>
+
+		<!-- Banner -->
+		<!--
+			Note: To show a background image, set the "data-bg" attribute below
+			to the full filename of your image. This is used in each section to set
+			the background image.
+		-->
+			<section id="banner" class="bg-img" data-bg="05.jpg">
+				<div class="inner">
+					<header>
+						<h1>建築物導覽</h1>
+					</header>
+				</div>
+				<a href="#one" class="more">Learn More</a>
+			</section>
+
+		<!-- One -->
+			<section id="one" class="wrapper post bg-img" data-bg="DSC00191.JPG" >
+				<div class="inner">
+					<article class="box">
+						<header>
+							<h2>地下一樓</h2>
+						
+						</header>
+						<img  id="onePNG" src="images/擷取B1.PNG" width="100%" alt="Link" />
+					</article>
+				</div>
+				<a href="#two" class="more">Learn More</a>
+			</section>
+
+		<!-- Two -->
+			<section id="two" class="wrapper post bg-img" data-bg="DSC00192.JPG">
+				<div class="inner">
+					<article class="box">
+						<header>
+							<h2>地上一樓</h2>
+						
+						</header>
+						<img id="twoPNG" src="images/擷取1F.PNG" width="100%" alt="Link" />
+						
+					</article>
+				</div>
+				<a href="#three" class="more">Learn More</a>
+			</section>
+
+		<!-- Three -->
+			<section id="three" class="wrapper post bg-img" data-bg="DSC00193.JPG">
+				<div class="inner">
+					<article class="box">
+						<header>
+							<h2>地上二樓</h2>
+						
+						</header>
+						<img id="threePNG" src="images/擷取2F.PNG" width="100%" alt="Link" />
+					</article>
+				</div>
+				<a href="#four" class="more">Learn More</a>
+			</section>
+
+		<!-- Four -->
+			<section id="four" class="wrapper post bg-img" data-bg="DSC00195.JPG">
+				<div class="inner">
+					<article class="box">
+						<header>
+							<header>
+							<h2>地上三樓</h2>
+						
+						</header>
+						<img id="fourPNG" src="images/擷取3F.PNG" width="100%" alt="Link" />
+					</article>
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+
+					<h2>Contact Me</h2>
+
+					<form action="#" method="post">
+
+							<ul  id="nav" >
+								<li><a href="#one" title="往地下室"><img src="images/B1.png" width="22%" alt="Link" /></a></li>
+								<li ><a href="#two" title="往1樓"><img src="images/1F.png" width="22%" alt="Link" /></a></li>
+								<li ><a href="#three" title="往2樓"><img src="images/2F.png" width="22%" alt="Link" /></a></li>
+								<li ><a href="#four" title="往3樓"><img src="images/3F.png" width="22%" alt="Link" /></a></li>
+							</ul>
+					</form>
+
+					<ul class="icons">
+						<li><a href="#" class="icon round fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon round fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon round fa-instagram"><span class="label">Instagram</span></a></li>
+					</ul>
+
+					<div class="copyright">
+						這是我的<a href="architecture.pptx">ppt</a>感謝指教。
+					</div>
+
+				</div>
+			</footer>
+
+
+<div style="visibility:hidden" class="div_right_bottom" id="lowerRightPicture"><img src="images/QQQ.jpg" width="200" height="200"/><p id="lowerRightPictureText">你好你好你好你好你好你好你好你好你好</p></div>
+
+<script>
+
+function mouseOver( e )
+{  
+		var aaaa=document.getElementById("lowerRightPicture");
+	aaaa.setAttribute("style","display:visible");
+   // swap the image when the mouse moves over it
+   if ( e.target.getAttribute( "id" ) == "one" )
+   {
+      document.getElementById("lowerRightPictureText").innerHTML="這是地下室喔";
+   } // end if
+     if ( e.target.getAttribute( "id" ) == "two" )
+   {
+      document.getElementById("lowerRightPictureText").innerHTML="這是一樓喔";
+   } // end if
+     if ( e.target.getAttribute( "id" ) == "three" )
+   {
+      document.getElementById("lowerRightPictureText").innerHTML="這是二樓喔";
+   } // end if
+     if ( e.target.getAttribute( "id" ) == "four" )
+   {
+      document.getElementById("lowerRightPictureText").innerHTML="這是三樓喔";
+   } // end if
+
+} // end function mouseOver
+function mouseOut( e )
+{
+   if ( e.target.getAttribute( "id" ) == "one" )
+   {
+      document.getElementById("lowerRightPictureText").innerHTML="我要幹嘛呢?";
+   } // end if
+     if ( e.target.getAttribute( "id" ) == "two" )
+   {
+      document.getElementById("lowerRightPictureText").innerHTML="有什麼需要我介紹嗎?";
+   } // end if
+     if ( e.target.getAttribute( "id" ) == "three" )
+   {
+      document.getElementById("lowerRightPictureText").innerHTML="一直移動我怎麼介紹呢?";
+   } // end if
+     if ( e.target.getAttribute( "id" ) == "four" )
+   {
+      document.getElementById("lowerRightPictureText").innerHTML="這樣玩我好玩嗎?";
+   } // end if
+} // end function mouseOut
+
+
+document.addEventListener( "mouseover", mouseOver, false );
+document.addEventListener( "mouseout", mouseOut, false );
+//window.addEventListener("load",start,false);
+
+
+</script>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
